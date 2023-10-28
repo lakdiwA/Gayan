@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+     - Roxy: Bootstrap template by GettTemplates.com
+     - https://gettemplates.co/roxy
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roxy by GetTemplates.co</title>
+    <meta name="description" content="Roxy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+    <header></header>
+    <div class="jumbotron jumbotron-single d-flex align-items-center parallex"
+        style="background-image: url(img/bg.jpg)">
+        <div class="container text-center">
+            <h1 class="display-2 mb-4">Sponsers</h1>
+        </div>
+    </div>
+    <section id="blog" class="bg-grey">
+        <div class="container">
+            <div class="section-content">
+                <div class="title-wrap mb-5" data-aos="fade-up">
+                    <h2 class="section-title"><b>Our Sponsers...</b></h2>
+                    <p class="section-sub-title">We are greatful for our sponsers</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 blog-holder">
+                        <div class="row">
+                            <div class="col-md-12 blog-item-wrapper" id="animateOnScroll">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <a href="#"><img src="img/HarmonyTunes.png" alt=""></a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <div class="blog-tag">
+                                            <a href="#">
+                                                <h6><small>SPONSER</small></h6>
+                                            </a>
+                                        </div>
+                                        <div class="blog-title">
+                                            <a href="#">
+                                                <h4>HarmonyTunes</h4>
+                                            </a>
+                                        </div>
+                                        <div class="blog-desc">
+                                            <p>Your Key to Musical Bliss! With a passion for music and a commitment to
+                                                quality, HarmonyTunes supports your musical journey by providing
+                                                top-notch instruments and accessories. Explore the world of sound with
+                                                our exceptional products.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 blog-holder">
+                        <div class="row">
+                            <div class="col-md-12 blog-item-wrapper" id="animateOnScroll">
+                                <div class="blog-item">
+                                    <div class="blog-img">
+                                        <video width="640" height="360" controls>
+                                            <source src="video.mp4" type="video/mp4">
+                                            <source src="video.webm" type="video/webm">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <a href="#"><img src="img/HarmonyTunes.png" alt=""></a>
+                                    </div>
+                                    <div class="blog-text">
+                                        <div class="blog-tag">
+                                            <a href="#">
+                                                <h6><small>SPONSER</small></h6>
+                                            </a>
+                                        </div>
+                                        <div class="blog-title">
+                                            <a href="#">
+                                                <h4>HarmonyTunes</h4>
+                                            </a>
+                                        </div>
+                                        <div class="blog-desc">
+                                            <p>Your Key to Musical Bliss! With a passion for music and a commitment to
+                                                quality, HarmonyTunes supports your musical journey by providing
+                                                top-notch instruments and accessories. Explore the world of sound with
+                                                our exceptional products.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <footer class="mastfoot my-3"></footer>
+
+    <script>
+        var $i = true;
+        $(document).scroll(function () {
+            var $window = $(window);
+            var $element = $('#animateOnScroll');
+            var $choice = ($element.offset().top - $element.outerHeight() >= $window.scrollTop() - 50);
+            if ($choice && $i) {
+                $element.animate({
+                    marginLeft: '-300px',
+                    opacity: '0'
+                });
+                $i = false;
+            } else {
+                if (!$i && !$choice) {
+                    $element.animate({
+                        marginLeft: '0px',
+                        opacity: '1'
+                    });
+                    $i = true;
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript" src="js/hf.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="vendor/bootstrap/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js "></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendor/isotope/isotope.min.js"></script>
+    <script src="vendor/lightcase/lightcase.js"></script>
+    <script src="vendor/waypoints/waypoint.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="js/app.min.js "></script>
+    <script src="//localhost:35729/livereload.js"></script>
+</body>
+
+</html>
