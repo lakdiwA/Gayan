@@ -1,11 +1,13 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Playpen Sans', cursive !important;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f4ede5;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4ede5;
+    overflow-x: hidden;
 }
 
 .center-content {
@@ -30,7 +32,7 @@ body {
     box-shadow: .3rem .3rem .5rem rgba(0, 0, 0, 0.263);
 }
 
-.box h1 {
+.box_1 h1 {
     text-align: center;
     color: red;
     font-weight: 200;
@@ -45,4 +47,42 @@ body {
 
 .parallex {
     background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.video-title {
+    text-align: center;
+}
+
+.video-title h4 {
+    font-size: 3em !important;
+}
+
+.blog-item video{
+    width: 100%;                         
+}
+
+.list-inline-item p {
+    font-weight: 200;
+}
+
+.overlay:before {
+    background: linear-gradient(to right, #333399, #ff00cc34) !important;
+}
+
+.list-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width:504px) {
+    .list-cards {
+        flex-direction: column;
+    }
+    .list-cards li {
+        padding-top: 3em;
+    }
 }
